@@ -6,7 +6,8 @@ import {
     OfficeAppsComponent,
     IconButtonComponent,
     LeftBarComponent,
-    TopBarComponent
+    TopBarComponent,
+    MenuAppsComponent
 } from 'src/components';
 import { MaterialModule } from './material.module';
 
@@ -20,7 +21,8 @@ import { MaterialModule } from './material.module';
         OfficeAppsComponent,
         IconButtonComponent,
         LeftBarComponent,
-        TopBarComponent
+        TopBarComponent,
+        MenuAppsComponent
     ],
     imports: [
         CommonModule,
@@ -33,6 +35,7 @@ import { MaterialModule } from './material.module';
         IconButtonComponent,
         LeftBarComponent,
         TopBarComponent,
+        MenuAppsComponent
     ]
 })
 export class SharedComponentsModule { }

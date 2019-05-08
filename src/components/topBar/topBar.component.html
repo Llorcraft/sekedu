@@ -1,14 +1,18 @@
-<mat-icon [class.active]="layout.collapsed" class="clickable x2 float-left mt-3" (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú">menu</mat-icon>
-<mat-icon class="clickable x2 float-right mt-3 mr-3" (click)="layout.toggleFullscreen()">fullscreen</mat-icon>
+<a (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú" [class.active]="layout.collapsed" class="clickable">
+    <i class="fas fa-bars fa-3x"></i>
+</a>
+
+<a class="clickable" (click)="layout.toggleFullscreen()">
+    <i class="fa-3x fas fa-expand"></i>
+</a>
+
 
 <mat-form-field class="example-full-width">
     <input matInput placeholder="Favorite food" value="Sushi">
 </mat-form-field>
 
 <div class="header-user">
-    <a>
-        <img src="../../assets/images/icons/icon-modules.svg">
-    </a>
+    <menu-apps></menu-apps>
     <img src="../../assets/images/profile-user.png">
     <div>
         <h4>Hola, Alicia Rivas</h4>

@@ -1,0 +1,25 @@
+button.menu-app-item {
+  span {
+    &:before {
+      content: attr(prefix);
+      display: inline-block;
+      padding: 0;
+      line-height: 3rem;
+      margin-right: 1rem;
+      border-radius: .25rem;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      width: 3rem;
+      text-align: center
+    }
+    &.item- {
+      &0 { &:before { background: #999999; } }
+      &1 { &:before { background: #2D4961; } }
+      &2 { &:before { background: #F56B22; } }
+      &3 { &:before { background: #77A22C; } }
+      &4 { &:before { background: #8C1616; } }
+      &5 { &:before { background: #399F9C; } }
+    }
+  }
+}
