@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let option of options">
+        <a href="#">
+            <img src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color">
+            <strong>
+                {{option.title}}
+            </strong>
+        </a>
+    </li>
+</ul>

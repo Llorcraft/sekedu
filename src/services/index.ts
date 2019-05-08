@@ -1,0 +1,1 @@
+export { MenuService } from "./api/menu.service";

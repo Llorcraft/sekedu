@@ -1,0 +1,16 @@
+<button class="float-right" (click)="toggle()">Toggle</button>
+<ul>
+    <li *ngFor="let option of options">
+        <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: 0}"></ng-container>
+    </li>
+</ul>
+
+<ng-template #node let-option="option" let-level="level">
+    {{level}} {{option.title}}
+    <ul *ngIf="option.options.length">
+        <li *ngFor="let option of option.options">
+            <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: level+1}">
+            </ng-container>
+        </li>
+    </ul>
+</ng-template>

@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let option of options">
+        <span class="badge badge-danger">31</span>
+        <img src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color">
+        {{option.title}}
+    </li>
+</ul>
