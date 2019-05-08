@@ -26,7 +26,8 @@ main-tools {
       flex-basis: 0;
       display: flex;
       border-radius: 0.25rem;
-      margin: .28rem auto;
+      // margin-top: .35rem;
+      // margin-bottom: .35rem;
 
       @include media(">=tablet", "landscape") {
         flex-direction: row;

@@ -1,26 +1,24 @@
-<div class="container">
-        <div class="row">
-          <main-options class="col-12"></main-options>
-        </div>
-        <div class="row">
-          <section class="col-8 row mt-4">
-            <div class="col-12 pr-4">
-              <legend class="custom col-12 p-0">Herramientas</legend>
-              <main-tools class="col-12 p-0"></main-tools>
-            </div>
-          </section>
-          <section class="col-4 row mt-4">
-            <div class="col-12 pl-4">
-              <legend class="custom col-12 p-0">Ofimática</legend>
-              <office-apps class="col-12 p-0"></office-apps>
-              <div class="col-12 col-12 mt-3 px-0">
-                <icon-button class="purple" (click)="gotoAbsences()" 
-                  icon="/assets/images/icons/cancel.svg"
-                  title="Ausencias"
-                  text="Faltas de asistencia, enfermedad y otros">
-                </icon-button> 
-              </div>
-            </div>
-          </section>
+<div class="container-fluid px-4">
+  <div class="row">
+    <main-options class="col-12"></main-options>
+  </div>
+  <div class="row">
+    <section class="col-8 row mt-4">
+      <div class="col-12 pr-4">
+        <legend class="custom col-12 p-0">Herramientas</legend>
+        <main-tools class="col-12 p-0"></main-tools>
+      </div>
+    </section>
+    <section class="col-4 row mt-4 pr-0">
+      <div class="col-12 pl-4 pr-0">
+        <legend class="custom col-12 p-0">Ofimática</legend>
+        <office-apps class="col-12 p-0"></office-apps>
+        <div class="col-12 col-12 mt-3 px-0">
+          <icon-button class="purple" (click)="gotoAbsences()" icon="/assets/images/icons/cancel.svg" title="Ausencias"
+            text="Faltas de asistencia, enfermedad y otros">
+          </icon-button>
         </div>
       </div>
+    </section>
+  </div>
+</div>

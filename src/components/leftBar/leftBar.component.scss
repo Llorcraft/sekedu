@@ -17,7 +17,7 @@ left-bar {
   }
 
   &.collapsed {
-    margin-left: -$leftBarWidth + 40px;
+    margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth});
   }
 
   ul {
