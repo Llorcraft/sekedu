@@ -1,0 +1,18 @@
+@import "../../scss/variables.scss";
+@import "../../scss/media.scss";
+
+top-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $topBarHeight;
+  z-index: 1;
+  transition: margin linear 0.25s;
+  //box-shadow: 0px 2px 0.5rem rgba(0, 0, 0, 0.5);
+
+  &.dark {
+    background: #263746;
+    color: #fff;
+  }
+}

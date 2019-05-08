@@ -1,3 +1,4 @@
+export { TopBarComponent } from "./topBar/topBar.component";
 export { LeftBarComponent } from "./leftBar/leftBar.component";
 export { IconButtonComponent } from "./iconButton/iconButton.component";
 export { OfficeAppsComponent } from "./officeApps/officeApps.component";

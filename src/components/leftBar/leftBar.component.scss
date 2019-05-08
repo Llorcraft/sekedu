@@ -1,14 +1,15 @@
-left-bar {
-  $width: 360px;
+@import "../../scss/variables.scss";
+@import "../../scss/media.scss";
 
-  width: $width;
+left-bar {
+  width: $leftBarWidth;
   position: fixed;
-  top: 0;
+  top: $topBarHeight;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - #{$topBarHeight});
   z-index: 1;
-  transition: margin linear 0.25s;
-  box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
+  transition: margin linear 0.15s;
+  //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
 
   &.dark {
     background: #263746;
@@ -16,7 +17,7 @@ left-bar {
   }
 
   &.collapsed {
-    margin-left: -$width + 40px;
+    margin-left: -$leftBarWidth + 40px;
   }
 
   ul {

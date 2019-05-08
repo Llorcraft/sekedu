@@ -5,7 +5,8 @@ import {
     MainToolsComponent,
     OfficeAppsComponent,
     IconButtonComponent,
-    LeftBarComponent
+    LeftBarComponent,
+    TopBarComponent
 } from 'src/components';
 
 @NgModule({
@@ -17,7 +18,8 @@ import {
         MainToolsComponent,
         OfficeAppsComponent,
         IconButtonComponent,
-        LeftBarComponent
+        LeftBarComponent,
+        TopBarComponent
     ],
     imports: [
         CommonModule
@@ -27,7 +29,8 @@ import {
         MainToolsComponent,
         OfficeAppsComponent,
         IconButtonComponent,
-        LeftBarComponent
+        LeftBarComponent,
+        TopBarComponent
     ]
 })
 export class SharedComponentsModule { }

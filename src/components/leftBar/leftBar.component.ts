@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, HostBinding, HostListener } from '@angular/core';
+import { Component, ViewEncapsulation, HostBinding, HostListener, Input } from '@angular/core';
 import { MenuService } from 'src/services';
 import { MenuOption } from 'src/models';
 
@@ -12,7 +12,7 @@ import { MenuOption } from 'src/models';
 export class LeftBarComponent {
     options: MenuOption[] = [];
     timer: any = null;
-    @HostBinding('class.collapsed') collapsed: boolean = false;
+    @HostBinding('class.collapsed') @Input() collapsed: boolean = false;
     // @HostListener('mouseout') onMouseOut() {
     //     clearTimeout(this.timer);
     //     if (!this.collapsed) this.timer = setTimeout(() => this.toggle(), 100);

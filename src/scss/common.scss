@@ -1,5 +1,6 @@
 @import "./media.scss";
 @import "./buttons.scss";
+@import "./variables.scss";
 
 html,
 body {
@@ -10,6 +11,7 @@ body {
 }
 
 body {
+  padding-top: $topBarHeight;
   font-family: Montserrat;
   color: #263746;
   background: url(/assets/images/bg/logo-rotated.png) right bottom no-repeat
