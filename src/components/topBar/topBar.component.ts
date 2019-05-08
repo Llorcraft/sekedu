@@ -13,7 +13,7 @@ export class TopBarComponent {
 
     toggleFullscreen(elem?: any) {
         elem = elem || document.documentElement;
-        if (!document.fullscreenElement && !document['mozFullScreenElement'] &&
+        if ( !document['mozFullScreenElement'] &&
           !document['webkitFullscreenElement'] && !document['msFullscreenElement']) {
           if (elem.requestFullscreen) {
             elem.requestFullscreen();

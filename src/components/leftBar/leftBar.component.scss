@@ -1,28 +1,25 @@
 @import "../../scss/variables.scss";
 @import "../../scss/media.scss";
-
 left-bar {
-  width: $leftBarWidth;
-  position: fixed;
-  top: $topBarHeight;
-  left: 0;
-  height: calc(100vh - #{$topBarHeight});
-  z-index: 1;
-  transition: margin linear 0.15s;
-  box-shadow: 2px 0 0.5rem rgba(0, 0, 0, 0.5);
-
-  &.dark {
-    background: #263746;
-    color: #fff;
-  }
-
-  &.collapsed {
-    margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth});
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    width: $leftBarWidth;
+    position: fixed;
+    top: $topBarHeight;
+    left: 0;
+    height: calc(100vh - #{$topBarHeight});
+    z-index: 1;
+    transition: margin linear 0.15s;
+    border: 1px solid #707070;
+    //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
+    &.dark {
+        background: #263746;
+        color: #fff;
+    }
+    &.collapsed {
+        margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth});
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 }

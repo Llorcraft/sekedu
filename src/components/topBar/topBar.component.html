@@ -1,2 +1,34 @@
-<mat-icon class="clickable x2 float-left mt-3" (click)="leftBar.toggle()">menu</mat-icon>
-<mat-icon class="clickable x2 float-right mt-3 mr-3" (click)="toggleFullscreen()">fullscreen</mat-icon>
+<div class="header-menu">
+    <a (click)="leftBar.toggle()"><i class="fas fa-bars fa-3x"></i></a>
+    <img src="../../assets/images/logo-sek-white.svg" alt="logotipo SEK">
+    <span>My<b>SEK</b></span>
+</div>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+</mat-form-field>
+
+<div class="header-user">
+    <a>
+        <img src="../../assets/images/icons/icon-modules.svg">
+    </a>
+    <img src="../../assets/images/profile-user.png">
+    <div>
+        <h4>Hola, Alicia Rivas</h4>
+        <h5>SEK Cuidalcampo</h5>
+    </div>
+</div>
+
+<div class="header-settings">
+    <a><span class="fa-layers fa-fw">
+            <i class="far fa-bell fa-2x"></i>
+            <span class="fa-layers-counter fa-2x">2</span>
+          </span>
+          </a>
+
+    <a><i class="fas fa-cog fa-2x"></i></a>
+
+    <a><i class="fas fa-power-off fa-2x"></i></a>
+</div>
+
+<!-- <button (click)="toggleFullscreen()">Fullscreen</button> -->

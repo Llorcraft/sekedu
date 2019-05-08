@@ -1,3 +1,19 @@
-$leftBarWidth: 260px;
+/*---Top bar---*/
+
+$leftBarWidth: 360px;
 $leftBarCollpasedWidth: $leftBarWidth;
-$topBarHeight: 65px;
+$topBarHeight: 100px;
+
+/*---Colores---*/
+
+$sek-orange: #F56B22;
+
+/*---Transiciones---*/
+
+%standardTrans {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
