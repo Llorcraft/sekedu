@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { LayoutService } from 'src/services';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Sek';
+
+  constructor(public layout: LayoutService){
+
+  }
 }
