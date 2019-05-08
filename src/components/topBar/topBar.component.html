@@ -1,10 +1,8 @@
-<a (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú" [class.active]="layout.collapsed" class="clickable">
+<a (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú" [class.active]="layout.collapsed"
+    class="clickable">
     <i class="fas fa-bars fa-3x"></i>
 </a>
 
-<a class="clickable" (click)="layout.toggleFullscreen()">
-    <i class="fa-3x fas fa-expand"></i>
-</a>
 
 
 <mat-form-field class="example-full-width">
@@ -21,14 +19,13 @@
 </div>
 
 <div class="header-settings">
-    <a><span class="fa-layers fa-fw">
-            <i class="far fa-bell fa-2x"></i>
-            <span class="fa-layers-counter fa-2x">2</span>
-          </span>
-          </a>
+    <a class="fa-layers fa-fw">
+        <i class="far fa-bell fa-2x"></i>
+        <span class="fa-layers-counter fa-2x">2</span>
+    </a>
 
     <a><i class="fas fa-cog fa-2x"></i></a>
-
+    <a class="clickable" matTooltip="Pantalla completa"  (click)="layout.toggleFullscreen()"><i class="fa-2x fas fa-expand"></i></a>
     <a><i class="fas fa-power-off fa-2x"></i></a>
 </div>
 
