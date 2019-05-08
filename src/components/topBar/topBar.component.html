@@ -1,8 +1,5 @@
-<div class="header-menu">
-    <a (click)="leftBar.toggle()"><i class="fas fa-bars fa-3x"></i></a>
-    <img src="../../assets/images/logo-sek-white.svg" alt="logotipo SEK">
-    <span>My<b>SEK</b></span>
-</div>
+<mat-icon [class.active]="layout.collapsed" class="clickable x2 float-left mt-3" (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú">menu</mat-icon>
+<mat-icon class="clickable x2 float-right mt-3 mr-3" (click)="layout.toggleFullscreen()">fullscreen</mat-icon>
 
 <mat-form-field class="example-full-width">
     <input matInput placeholder="Favorite food" value="Sushi">

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardPage } from 'src/pages';
 import { SharedComponentsModule } from './components.module';
 import { MaterialModule } from './material.module';
+import { LayoutService } from 'src/services';
 
 @NgModule({
     schemas: [
@@ -15,6 +16,9 @@ import { MaterialModule } from './material.module';
         CommonModule,
         SharedComponentsModule,
         MaterialModule
+    ],
+    providers: [
+        LayoutService
     ],
     exports: [
         DashboardPage
