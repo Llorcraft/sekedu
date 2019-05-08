@@ -6,7 +6,7 @@ export class LayoutService {
 
     toggleFullscreen(elem: any) {
         elem = elem || document.documentElement;
-        if (!document.fullscreenElement && !document['mozFullScreenElement'] &&
+        if (!document['fullscreenElement'] && !document['mozFullScreenElement'] &&
             !document['webkitFullscreenElement'] && !document['msFullscreenElement']) {
             if (elem.requestFullscreen) {
                 elem.requestFullscreen();
@@ -18,8 +18,8 @@ export class LayoutService {
                 elem.webkitRequestFullscreen(Element['ALLOW_KEYBOARD_INPUT']);
             }
         } else {
-            if (document.exitFullscreen) {
-                document.exitFullscreen();
+            if (document['exitFullscreen']) {
+                document['exitFullscreen']();
             } else if (document['msExitFullscreen']) {
                 document['msExitFullscreen']();
             } else if (document['mozCancelFullScreen']) {
