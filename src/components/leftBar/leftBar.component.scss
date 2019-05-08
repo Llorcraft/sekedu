@@ -9,7 +9,7 @@ left-bar {
   height: calc(100vh - #{$topBarHeight});
   z-index: 1;
   transition: margin linear 0.15s;
-  //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0 0.5rem rgba(0, 0, 0, 0.5);
 
   &.dark {
     background: #263746;

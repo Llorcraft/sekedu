@@ -8,6 +8,7 @@ import {
     LeftBarComponent,
     TopBarComponent
 } from 'src/components';
+import { MaterialModule } from './material.module';
 
 @NgModule({
     schemas: [
@@ -22,7 +23,8 @@ import {
         TopBarComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        MaterialModule,
     ],
     exports: [
         MainOptionsComponent,
@@ -30,7 +32,7 @@ import {
         OfficeAppsComponent,
         IconButtonComponent,
         LeftBarComponent,
-        TopBarComponent
+        TopBarComponent,
     ]
 })
 export class SharedComponentsModule { }

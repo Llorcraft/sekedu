@@ -4,16 +4,16 @@ import { DashboardPage } from 'src/pages';
 
 // Array con las rutas de este módulo. Ninguna funcional.
 const routes: Routes = [
-  { path: '', redirectTo: '' },
   { path: 'dashboard', component: DashboardPage },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full'  },
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes) // configuración para el módulo raíz
+    RouterModule.forRoot(routes)
   ],
   exports: [
-    RouterModule // se importará desde el módulo padre
+    RouterModule
   ]
 })
 export class AppRoutingModule { }
