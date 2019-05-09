@@ -47,7 +47,7 @@ main-options {
             }
             &:hover {
                 cursor: pointer;
-                img {
+                img, .badge {
                     box-shadow: 0.15rem 0.15rem 1rem rgba(0, 0, 0, 0.5);
                     //opacity: 1;
                 }
