@@ -24,8 +24,8 @@ main-options {
             .badge {
                 $size: 32px;
                 float: right;
-                margin-top: $size/2;
-                margin-bottom: $size/-2;
+                //margin-top: $size;
+                margin-bottom: -$size;
                 margin-right: $size/-3;
                 font-size: 100%;
                 border-radius: 50%;
