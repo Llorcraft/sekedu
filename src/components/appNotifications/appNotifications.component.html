@@ -1,0 +1,11 @@
+<a class="fa-layers fa-fw" [matMenuTriggerFor]="appsNotifications">
+    <i class="far fa-bell fa-2x"></i>
+    <span class="fa-layers-counter fa-2x">2</span>
+</a>
+<mat-menu #appsNotifications="matMenu" class="notifications-menu">
+    <button mat-menu-item *ngFor="let notification of notifications">
+        <strong>{{notification.title}}</strong>
+        <output>{{notification.text}}</output>
+        <output>{{notification.date | date}}</output>
+    </button>
+</mat-menu>

@@ -1,12 +1,18 @@
-<a (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú" [class.active]="layout.collapsed"
-    class="clickable">
-    <i class="fas fa-bars fa-3x"></i>
-</a>
+<div class="header-menu">
+    <a (click)="layout.toggleCollapsed()" matTooltip="Mostrar/Ocultar menú" [class.active]="layout.collapsed" class="clickable">
+        <i class="fas fa-bars fa-3x"></i>
+    </a>
+    <img src="../../assets/images/logo-sek-white.svg" alt="logotipo SEK">
+    <span>My<b>SEK</b></span>
+</div>
 
 
 
-<mat-form-field class="example-full-width">
-    <input matInput placeholder="Favorite food" value="Sushi">
+
+<mat-form-field>
+    <!-- <mat-icon matPrefix>search</mat-icon> -->
+    <mat-icon matSuffix>search</mat-icon>
+    <input matInput placeholder="Buscar" value="">
 </mat-form-field>
 
 <div class="header-user">
@@ -19,14 +25,8 @@
 </div>
 
 <div class="header-settings">
-    <a class="fa-layers fa-fw">
-        <i class="far fa-bell fa-2x"></i>
-        <span class="fa-layers-counter fa-2x">2</span>
-    </a>
-
+    <app-notifications></app-notifications>
     <a><i class="fas fa-cog fa-2x"></i></a>
-    <a class="clickable" matTooltip="Pantalla completa"  (click)="layout.toggleFullscreen()"><i class="fa-2x fas fa-expand"></i></a>
+    <a class="clickable" matTooltip="Pantalla completa" (click)="layout.toggleFullscreen()"><i class="fa-2x fas fa-expand"></i></a>
     <a><i class="fas fa-power-off fa-2x"></i></a>
 </div>
-
-<!-- <button (click)="toggleFullscreen()">Fullscreen</button> -->

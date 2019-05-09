@@ -10,7 +10,7 @@ left-bar {
     transition: margin linear 0.15s;
     border: 1px solid #707070;
     //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
-    &.dark {
+    &.theme-dark {
         background: #263746;
         color: #fff;
     }

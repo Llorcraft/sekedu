@@ -7,6 +7,9 @@ import { SharedComponentsModule, PageModules, MaterialModule } from 'src/modules
 import { AppRoutingModule } from './app.router';
 import { LayoutService } from 'src/services';
 
+// Componentes
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,8 @@ import { LayoutService } from 'src/services';
     BrowserAnimationsModule,
     SharedComponentsModule,
     PageModules,
-    MaterialModule
+    MaterialModule,
+    MatFormFieldModule
   ],
   providers: [
     LayoutService

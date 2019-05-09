@@ -5,16 +5,16 @@ import { MenuOption } from 'src/models';
 export class MenuService {
     getLeftOptions(): Promise<MenuOption[]> {
         return new Promise<MenuOption[]>(resolve => {
-            let options = [
+            const options = [
                 new MenuOption({ icon: 'word.png', title: 'Word', options: [
                     new MenuOption({ icon: 'excel.png', title: 'Excel' }),
                     new MenuOption({ icon: 'ppt.png', title: 'Power Point' }),
                     new MenuOption({ icon: 'onedrive.png', title: 'One Drive' }),
                 ]}),
-                new MenuOption({ icon: 'teams.png', title: 'Teams' }),            
+                new MenuOption({ icon: 'teams.png', title: 'Teams'}),
                 new MenuOption({ icon: 'skype.png', title: 'Skype', options: [
                     new MenuOption({ icon: 'onenote.png', title: 'One Note' }),
-                    new MenuOption({ icon: 'outlook.png', title: 'Outlook' })
+                    new MenuOption({ icon: 'outlook.png', title: 'Outlook'})
                 ]})
             ]
             resolve(options)
@@ -23,7 +23,7 @@ export class MenuService {
     
     async getOfficeApps(): Promise<MenuOption[]> {
         return new Promise<MenuOption[]>(resolve => {
-            let apps = [
+            const apps = [
                 new MenuOption({ icon: 'word.png', title: 'Word' }),
                 new MenuOption({ icon: 'excel.png', title: 'Excel' }),
                 new MenuOption({ icon: 'ppt.png', title: 'Power Point' }),
@@ -40,9 +40,9 @@ export class MenuService {
     async getMainOptions(): Promise<MenuOption[]> {
         return new Promise<MenuOption[]>(resolve => {
             resolve([
-                new MenuOption({ icon: 'collaborate-environment.png', title: 'Mi entorno Colaborativo', color: '#5552AB' }),
+                new MenuOption({ icon: 'collaborate-environment.png', title: 'Mi entorno Colaborativo', color: '#5552AB', notifications: [1, 2]  }),
                 new MenuOption({ icon: 'learning-environment.png', title: 'Mi entorno de aprendizaje', color: '#7FB423' }),
-                new MenuOption({ icon: 'email.png', title: 'Correo', color: '#0072C6' }),
+                new MenuOption({ icon: 'email.png', title: 'Correo', color: '#0072C6', notifications: [1, 2, 3]  }),
                 new MenuOption({ icon: 'academic-data.png', title: 'Datos Académicos', color: '#F56B22' }),
                 new MenuOption({ icon: 'sek-prime.png', title: 'Diploma SEK', color: '#32B4AF' }),
                 new MenuOption({ icon: 'service-manager.png', title: 'Gestor de Servicios', color: '#BF903F' }),

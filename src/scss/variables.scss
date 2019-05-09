@@ -2,7 +2,7 @@
 
 $leftBarWidth: 360px;
 $leftBarCollpasedWidth: $leftBarWidth;
-$topBarHeight: 100px;
+$topBarHeight: 80px;
 
 /*---Colores---*/
 
@@ -17,3 +17,9 @@ $sek-orange: #F56B22;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
+
+/*Themes*/
+
+$theme-dark-fore-color: #fff;
+$theme-dark-background-color: #24252b;

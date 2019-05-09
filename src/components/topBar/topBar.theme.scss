@@ -1,0 +1,20 @@
+@mixin theme($font-color, $background-color) {
+    color: $font-color;
+    background-color: $background-color;
+    .mat-form-field {
+        width: 400px;
+        .mat-form-field-label-wrapper {
+            color: $font-color;
+        }
+        .mat-form-field-underline {
+            background-color: $font-color;
+        }
+        .mat-input-element {
+            caret-color: $font-color;
+        }
+        .mat-form-field-label {
+            color: #ccc;
+            font-style: italic;
+        }
+    }
+}

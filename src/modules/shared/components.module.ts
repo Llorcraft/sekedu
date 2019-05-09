@@ -7,7 +7,8 @@ import {
     IconButtonComponent,
     LeftBarComponent,
     TopBarComponent,
-    MenuAppsComponent
+    MenuAppsComponent,
+    AppNotificationsComponent
 } from 'src/components';
 import { MaterialModule } from './material.module';
 
@@ -22,7 +23,8 @@ import { MaterialModule } from './material.module';
         IconButtonComponent,
         LeftBarComponent,
         TopBarComponent,
-        MenuAppsComponent
+        MenuAppsComponent,
+        AppNotificationsComponent
     ],
     imports: [
         CommonModule,
@@ -35,7 +37,8 @@ import { MaterialModule } from './material.module';
         IconButtonComponent,
         LeftBarComponent,
         TopBarComponent,
-        MenuAppsComponent
+        MenuAppsComponent,
+        AppNotificationsComponent
     ]
 })
 export class SharedComponentsModule { }

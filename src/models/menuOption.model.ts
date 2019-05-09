@@ -12,4 +12,5 @@ export class MenuOption {
     public color: string;
     public url: string;
     public options: MenuOption[];
+    public notifications: any[] = [];
 }

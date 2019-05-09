@@ -1,50 +1,50 @@
 icon-button {
-  display: grid;
-  grid-template-columns: 45px auto;
-  padding: 1rem 0;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  text-align: left;
-  &:hover {
-    box-shadow: 0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.3);
-  }
-  span {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 50% auto;
-  }
-
-  strong {
-    padding: 0 0.75rem;
-    overflow: hidden;
-    small {
-      display: block;
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    display: grid;
+    grid-template-columns: 45px auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    text-align: left;
+    width: 100%;
+    &:hover {
+        box-shadow: 0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.3);
     }
-  }
-
-  &.purple {
-    $color: #545385;
-    background: $color;
-    color: #fff;
     span {
-      border-right: 1px solid lighten($color, 10);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
     }
     strong {
-      border-left: 1px solid darken($color, 10);
+        padding: 0 0.75rem;
+        overflow: hidden;
+        small {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
-  }
-  &.cyan {
-    $color: #d4e1f3;
-    background: $color;
-    span {
-      border-right: 1px solid lighten($color, 10);
+    &.purple {
+        $color: #545385;
+        background: $color;
+        color: #fff;
+        span {
+            border-right: 1px solid lighten($color, 10);
+        }
+        strong {
+            border-left: 1px solid darken($color, 10);
+        }
     }
-    strong {
-      border-left: 1px solid darken($color, 10);
+    &.cyan {
+        $color: #d4e1f3;
+        background: $color;
+        span {
+            border-right: 1px solid lighten($color, 10);
+        }
+        strong {
+            border-left: 1px solid darken($color, 10);
+        }
     }
-  }
 }
