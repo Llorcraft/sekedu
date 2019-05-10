@@ -1,4 +1,4 @@
-<ul>
+<ul class="level-0">
     <li *ngFor="let option of options">
         <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: 0}"></ng-container>
     </li>
@@ -6,9 +6,10 @@
 
 <ng-template #node let-option="option" let-level="level">
     {{level}} {{option.title}}
-    <ul *ngIf="option.options.length">
+    <i class="fas fa-user"></i>
+    <ul *ngIf="option.options.length" class="level-{{level}}">
         <li *ngFor="let option of option.options">
-            <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: level+1}">
+            <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: (level+1)}">
             </ng-container>
         </li>
     </ul>

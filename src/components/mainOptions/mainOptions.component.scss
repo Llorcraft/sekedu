@@ -1,8 +1,6 @@
 @import "../../scss/media.scss";
-
 main-options {
     display: inline-block;
-
     ul {
         list-style: none;
         display: grid;
@@ -13,50 +11,43 @@ main-options {
         margin: 0;
         overflow: hidden;
         font-size: 1rem;
-
         @include media(">=tablet", "landscape") {
             grid-template-columns: repeat(8, 12.5%);
             grid-row-gap: 1rem;
         }
-
         >li {
             $padding: 1rem;
-
             display: flex;
             flex-direction: column;
             text-align: center;
             font-weight: 600;
             max-width: 100%;
             padding: $padding;
-            
             &:before {
                 content: "12";
                 $size: 32px;
-                z-index: 200;
+                z-index: 1;
                 font-size: 100%;
                 border-radius: 50%;
                 line-height: $size;
                 padding: 0;
                 width: $size;
-                margin-left: calc(100% - #{$padding} - #{$size/2});
+                margin-left: calc(100% - #{$padding} - #{$size/1.1});
                 background: red;
                 color: #fff;
                 margin-bottom: -$size / 1.5;
                 //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
             }
-
             img {
                 max-width: 90%;
                 display: block;
                 margin: 0.5rem auto 2rem;
                 border-radius: 0.5rem;
             }
-
             &:hover {
                 cursor: pointer;
-
                 img,
-                .badge {
+                &:before {
                     box-shadow: 0.15rem 0.15rem 1rem rgba(0, 0, 0, 0.5);
                     //opacity: 1;
                 }
