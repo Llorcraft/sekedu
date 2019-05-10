@@ -1,53 +1,62 @@
 @import "../../scss/media.scss";
+
 main-options {
     display: inline-block;
+
     ul {
         list-style: none;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        // align-items: flex-start;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
         padding: 0;
         margin: 0;
-        grid-gap: 2rem;
+        overflow: hidden;
+        font-size: 1rem;
+
         @include media(">=tablet", "landscape") {
-            flex-direction: row;
-            font-size: 1rem;
+            grid-template-columns: repeat(8, 12.5%);
+            grid-row-gap: 1rem;
         }
+
         >li {
+            $padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
             text-align: center;
             font-weight: 600;
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 0;
-            width: 0;
-            .badge {
+            max-width: 100%;
+            padding: $padding;
+            
+            &:before {
+                content: "12";
                 $size: 32px;
-                float: right;
-                //margin-top: $size;
-                margin-bottom: -$size;
-                margin-right: $size/-3;
+                z-index: 200;
                 font-size: 100%;
                 border-radius: 50%;
                 line-height: $size;
                 padding: 0;
                 width: $size;
-                //border: 2px solid #fff;
+                margin-left: calc(100% - #{$padding} - #{$size/2});
+                background: red;
+                color: #fff;
+                margin-bottom: -$size / 1.5;
                 //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
             }
-            @include media(">=tablet", "landscape") {
-                margin: 0.5rem 1rem;
-            }
+
             img {
-                width: 100%;
+                max-width: 90%;
                 display: block;
                 margin: 0.5rem auto 2rem;
                 border-radius: 0.5rem;
-                //opacity: .85;
             }
+
             &:hover {
                 cursor: pointer;
-                img, .badge {
+
+                img,
+                .badge {
                     box-shadow: 0.15rem 0.15rem 1rem rgba(0, 0, 0, 0.5);
                     //opacity: 1;
                 }

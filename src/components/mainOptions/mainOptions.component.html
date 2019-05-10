@@ -1,6 +1,5 @@
 <ul>
     <li *ngFor="let option of options">
-        <span *ngIf="!!option.notifications.length" class="badge badge-danger">{{option.notifications.length}}</span>
-        <img src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color"> {{option.title}}
+        <img badge="12" src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color"> {{option.title}}
     </li>
 </ul>
