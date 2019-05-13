@@ -1,10 +1,36 @@
-<ul>
+<mat-accordion class="dark">
+    <mat-expansion-panel *ngFor="let option of options; let i = index" [disabled]="!option.options.length" [class.active]="i==0">
+      <mat-expansion-panel-header [collapsedHeight]="'48px'" [expandedHeight]="'48px'">
+        <mat-panel-title>{{option.title}}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul *ngIf="option.options.length">
+        <li *ngFor="let subOption of option.options">
+            {{subOption.title}}
+        </li>
+    </ul>
+      
+    </mat-expansion-panel>
+    <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Self aware panel
+        </mat-panel-title>
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+    </mat-expansion-panel> -->
+  </mat-accordion>
+  
+<!-- <ul>
     <li *ngFor="let option of options">
         <ng-container [ngTemplateOutlet]="node" [ngTemplateOutletContext]="{option: option, level: 0}"></ng-container>
     </li>
-</ul>
+</ul> -->
 
-<ng-template #node let-option="option" let-level="level">
+<!-- <ng-template #node let-option="option" let-level="level">
     {{level}} {{option.title}}
     <ul *ngIf="option.options.length">
         <li *ngFor="let option of option.options">
@@ -12,4 +38,4 @@
             </ng-container>
         </li>
     </ul>
-</ng-template>
+</ng-template> -->

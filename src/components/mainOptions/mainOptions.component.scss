@@ -32,7 +32,7 @@ main-options {
             &:before {
                 content: "12";
                 $size: 32px;
-                z-index: 200;
+                z-index: 2;
                 font-size: 100%;
                 border-radius: 50%;
                 line-height: $size;

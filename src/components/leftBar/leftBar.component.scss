@@ -1,25 +1,75 @@
 @import "../../scss/variables.scss";
 @import "../../scss/media.scss";
+
 left-bar {
     width: $leftBarWidth;
     position: fixed;
     top: $topBarHeight;
     left: 0;
     height: calc(100vh - #{$topBarHeight});
-    z-index: 1;
+    z-index: 3;
     transition: margin linear 0.15s;
-    border: 1px solid #707070;
+    border-top: 1px solid #707070;
+
     //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
-    &.theme-dark {
-        background: #263746;
-        color: #fff;
-    }
     &.collapsed {
         margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth});
     }
+
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
+    }
+
+    &.theme-dark {
+        $background: #263746;
+        $color: #fff;
+
+        background: $background;
+        color: $color;
+
+        mat-accordion.dark {
+            mat-expansion-panel {
+                background: $background;
+                box-shadow: none;
+                border-radius: 0 !important;
+
+                mat-expansion-panel-header {
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+
+                    &.mat-expanded {}
+
+                    &:hover {
+                        box-shadow: none;
+                    }
+
+                    mat-panel-title {
+                        background: transparent;
+                        color: $color !important;
+                        cursor: pointer;
+                        pointer-events: initial
+                    }
+
+                    .mat-expansion-indicator:after {
+                        color: $color;
+                    }
+                }
+
+                .mat-expansion-panel-body {
+                    background: #fff;
+                }
+
+                &.active {
+                    mat-expansion-panel-header {
+                        background: darken($background, 10) !important;
+
+                        mat-panel-title {}
+                    }
+                }
+            }
+        }
     }
 }
