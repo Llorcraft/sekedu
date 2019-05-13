@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.109" height="26.029" viewBox="0 0 24.109 26.029">
+  <g id="Grupo_1104" data-name="Grupo 1104" transform="translate(-33 -510.322)">
+    <path id="Rectángulo_557" data-name="Rectángulo 557" d="M2,0H21.341a2,2,0,0,1,2,2V5.141a0,0,0,0,1,0,0H1a1,1,0,0,1-1-1V2A2,2,0,0,1,2,0Z" transform="translate(33 515.947)" fill="#f10682"/>
+    <g id="Grupo_1087" data-name="Grupo 1087" transform="translate(36.269 522.971)">
+      <rect id="Rectángulo_560" data-name="Rectángulo 560" width="2.776" height="2.776" transform="translate(7.773)" fill="#f10682"/>
+      <rect id="Rectángulo_561" data-name="Rectángulo 561" width="2.776" height="2.776" transform="translate(11.66)" fill="#f10682"/>
+      <rect id="Rectángulo_562" data-name="Rectángulo 562" width="2.776" height="2.776" transform="translate(15.546)" fill="#f10682"/>
+      <rect id="Rectángulo_563" data-name="Rectángulo 563" width="2.776" height="2.776" transform="translate(7.773 3.887)" fill="#f10682"/>
+      <rect id="Rectángulo_564" data-name="Rectángulo 564" width="2.776" height="2.776" transform="translate(11.66 3.887)" fill="#f10682"/>
+      <rect id="Rectángulo_565" data-name="Rectángulo 565" width="2.776" height="2.776" transform="translate(0 3.887)" fill="#f10682"/>
+      <rect id="Rectángulo_566" data-name="Rectángulo 566" width="2.776" height="2.776" transform="translate(3.887 3.887)" fill="#f10682"/>
+      <rect id="Rectángulo_567" data-name="Rectángulo 567" width="2.776" height="2.776" transform="translate(15.546 3.887)" fill="#f10682"/>
+      <rect id="Rectángulo_568" data-name="Rectángulo 568" width="2.776" height="2.776" transform="translate(7.773 7.773)" fill="#f10682"/>
+      <rect id="Rectángulo_569" data-name="Rectángulo 569" width="2.776" height="2.776" transform="translate(11.66 7.773)" fill="#f10682"/>
+      <rect id="Rectángulo_570" data-name="Rectángulo 570" width="2.776" height="2.776" transform="translate(0 7.773)" fill="#f10682"/>
+      <rect id="Rectángulo_571" data-name="Rectángulo 571" width="2.776" height="2.776" transform="translate(3.887 7.773)" fill="#f10682"/>
+    </g>
+    <g id="Rectángulo_595" data-name="Rectángulo 595" transform="translate(33 515.858)" fill="none" stroke="#f10682" stroke-width="1">
+      <rect width="24.109" height="20.493" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23.109" height="19.493" rx="1.5" fill="none"/>
+    </g>
+    <rect id="Rectángulo_558" data-name="Rectángulo 558" width="3.217" height="6.771" rx="1.609" transform="translate(37.529 510.822)" fill="#263746" stroke="#f10682" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Trazado_1041" data-name="Trazado 1041" d="M1.609,0A1.609,1.609,0,0,1,3.217,1.609V5.163A1.609,1.609,0,1,1,0,5.163V1.609A1.609,1.609,0,0,1,1.609,0Z" transform="translate(50.487 510.822)" fill="#263746" stroke="#f10682" stroke-width="1"/>
+  </g>
+</svg>
