@@ -25,6 +25,10 @@ left-bar {
     &.theme-dark {
         $background: #263746;
         $color: #fff;
+        $background-active: #262B30;
+        $background-child: #EAF1FB;
+        $color-child:#263746;
+        $background-child-active:#CCE4F9;
 
         background: $background;
         color: $color;
@@ -59,12 +63,13 @@ left-bar {
                 }
 
                 .mat-expansion-panel-body {
-                    background: #fff;
+                    background: $background-child;
+                    color: $color-child;
                 }
 
                 &.active {
                     mat-expansion-panel-header {
-                        background: darken($background, 10) !important;
+                        background: $background-active;
 
                         mat-panel-title {}
                     }

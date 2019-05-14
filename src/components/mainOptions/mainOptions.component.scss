@@ -28,9 +28,13 @@ main-options {
             font-weight: 600;
             max-width: 100%;
             padding: $padding;
+
+            &[badge="0"],&[badge=""]{
+                margin-top: 2.5rem;
+            }
             
             &:before {
-                content: "12";
+                content: attr(badge);
                 $size: 32px;
                 z-index: 2;
                 font-size: 100%;

@@ -1,5 +1,5 @@
 <ul>
-    <li *ngFor="let option of options">
-        <img badge="12" src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color"> {{option.title}}
+    <li *ngFor="let option of options; let i=index" [attr.badge]="i%2?(i+1):''">
+        <img src="/assets/images/icons/{{option.icon}}" [style.backgroundColor]="option.color"> {{option.title}}
     </li>
 </ul>
