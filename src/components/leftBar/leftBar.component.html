@@ -1,12 +1,11 @@
 <mat-accordion class="dark">
-    <mat-expansion-panel *ngFor="let option of options; let i = index" [disabled]="!option.options.length"
-        [class.active]="i==0">
-        <mat-expansion-panel-header [collapsedHeight]="'48px'" [expandedHeight]="'48px'">
-            <mat-panel-title>{{option.title}}</mat-panel-title>
+    <mat-expansion-panel *ngFor="let option of options; let i = index" [disabled]="!option.options.length" [class.active]="i==0">
+        <mat-expansion-panel-header [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+            <mat-panel-title><i class="{{option.icon}}"></i> {{option.title}}</mat-panel-title>
         </mat-expansion-panel-header>
         <ul *ngIf="option.options.length">
             <li *ngFor="let subOption of option.options">
-                {{subOption.title}}
+                <i class="{{subOption.icon}}"></i> {{subOption.title}}
             </li>
         </ul>
 

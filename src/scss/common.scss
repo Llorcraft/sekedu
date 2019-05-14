@@ -1,6 +1,12 @@
 @import "./media.scss";
 @import "./buttons.scss";
 @import "./variables.scss";
+* {
+    font-family: 'Montserrat'/* Replace with your custom font */
+    , sans-serif !important;
+    /* Add !important to overwrite all elements */
+}
+
 html,
 body {
     margin: 0;
@@ -12,7 +18,6 @@ body {
 body {
     padding-top: $topBarHeight;
     //padding-left: $leftBarCollpasedWidth;
-    font-family: Montserrat;
     color: #263746;
     background: url(/assets/images/bg/logo-rotated.png) right bottom no-repeat fixed;
     background-size: auto 94%;

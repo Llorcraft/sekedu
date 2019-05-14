@@ -6,16 +6,27 @@ export class MenuService {
     getLeftOptions(): Promise<MenuOption[]> {
         return new Promise<MenuOption[]>(resolve => {
             const options = [
-                new MenuOption({ icon: 'icono-menu-inicio.svg', title: 'Inicio', options: [
-                    new MenuOption({ icon: 'excel.png', title: 'Excel' }),
-                    new MenuOption({ icon: 'ppt.png', title: 'Power Point' }),
-                    new MenuOption({ icon: 'onedrive.png', title: 'One Drive' }),
+                new MenuOption({ icon: 'icon-menu-inicio', title: 'Inicio'}),
+                new MenuOption({ icon: 'icon-menu-colaborativo', title: 'Mi entorno Colaborativo'}),
+                new MenuOption({ icon: 'icon-menu-entorno-aprendizaje', title: 'Mi entorno de Aprendizaje'}),
+                new MenuOption({ icon: 'icon-menu-correo', title: 'Correo'}),
+                new MenuOption({ icon: 'icon-menu-datos-academicos', title: 'Datos Académicos'}),
+                new MenuOption({ icon: 'icon-menu-gestor-servicios', title: 'Gestor de Servicios'}),
+                new MenuOption({ icon: 'icon-menu-portfolio-digital', title: 'Portfolio Digital'}),
+                new MenuOption({ icon: 'icon-menu-calendarios', title: 'Calendarios'}),
+                new MenuOption({ icon: 'icon-menu-herramientas', title: 'Herramientas', options: [
+                    new MenuOption({ icon: 'icon-blogosfera', title: 'Blogosfera' }),
+                    new MenuOption({ icon: 'icon-libro', title: 'Libros'}),
+                    new MenuOption({ icon: 'icon-biblioteca', title: 'Biblioteca'}),
+                    new MenuOption({ icon: 'icon-apuntes', title: 'Apuntes'}),
+                    new MenuOption({ icon: 'icon-videoteca', title: 'Videoteca'}),
+                    new MenuOption({ icon: 'icon-documentos', title: 'Documentos Populares'})
                 ]}),
-                new MenuOption({ icon: 'teams.png', title: 'Teams'}),
-                new MenuOption({ icon: 'skype.png', title: 'Skype', options: [
-                    new MenuOption({ icon: 'onenote.png', title: 'One Note' }),
-                    new MenuOption({ icon: 'outlook.png', title: 'Outlook'})
-                ]})
+                new MenuOption({ icon: 'icon-menu-ofimatica', title: 'Ofimática'}),
+                new MenuOption({ icon: 'icon-menu-ausencias', title: 'Ausencias'}),
+                new MenuOption({ icon: 'icon-menu-usuario', title: 'Usuario'}),
+                new MenuOption({ icon: 'icon-menu-ajustes', title: 'Ajustes'}),
+                new MenuOption({ icon: 'icon-menu-cerrar-sesion', title: 'Cerrar Sesión'})
             ]
             resolve(options)
         });
