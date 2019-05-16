@@ -1,18 +1,20 @@
 @import "../../scss/variables.scss";
 @import "../../scss/media.scss";
 left-bar {
-    overflow: auto;
+    overflow-y: auto;
+    overflow: hidden;
     width: $leftBarWidth;
     position: fixed;
     top: $topBarHeight;
     left: 0;
     height: calc(100vh - #{$topBarHeight});
     z-index: 3;
-    transition: margin linear 0.15s;
+    transition: width linear 0.15s;
     border-top: 1px solid #707070;
     //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
     &.collapsed {
-        margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth});
+        width: $leftBarCollpasedWidth;
+        //margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth} + 40px);
     }
     ul {
         list-style: none;
@@ -48,6 +50,7 @@ left-bar {
                         cursor: pointer;
                         pointer-events: initial;
                         font-size: 15px;
+                        white-space: nowrap;
                         i {
                             margin-right: 30px;
                             font-size: 23px;
@@ -104,6 +107,7 @@ left-bar {
                 .mat-expansion-panel-body {
                     background: $background-child;
                     color: $color-child;
+                    white-space: nowrap;
                 }
                 ul {
                     li {

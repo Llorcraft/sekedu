@@ -11,6 +11,5 @@ export class AppComponent {
   title = 'My Sek';
 
   constructor(public layout: LayoutService){
-
   }
 }

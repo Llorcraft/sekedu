@@ -1,0 +1,24 @@
+@import "../scss/variables.scss";
+
+app-root {
+    display: inline-block;
+    width: 100%;
+
+    .layout {
+        width: 100%;
+        display: grid;
+        grid-template-columns: $leftBarWidth auto;
+
+        &.collapsed {
+            grid-template-columns: $leftBarCollpasedWidth auto;
+        }
+
+        >* {
+            display: flex;
+        }
+
+        dashboard-page {
+            transition: width linear 1s;
+        }
+    }
+}

@@ -1,3 +1,5 @@
 <top-bar class="theme-dark"></top-bar>
-<left-bar class="theme-dark" [collapsed]="layout.collapsed"></left-bar>
-<router-outlet></router-outlet>
+<div class="layout" [class.collapsed]="layout.collapsed">
+    <left-bar class="theme-dark" [collapsed]="layout.collapsed"></left-bar>
+    <router-outlet></router-outlet>
+</div>
