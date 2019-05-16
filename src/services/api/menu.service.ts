@@ -15,12 +15,12 @@ export class MenuService {
                 new MenuOption({ icon: 'icon-menu-portfolio-digital', title: 'Portfolio Digital'}),
                 new MenuOption({ icon: 'icon-menu-calendarios', title: 'Calendarios'}),
                 new MenuOption({ icon: 'icon-menu-herramientas', title: 'Herramientas', options: [
-                    new MenuOption({ icon: 'icon-blogosfera', title: 'Blogosfera' }),
-                    new MenuOption({ icon: 'icon-libro', title: 'Libros'}),
-                    new MenuOption({ icon: 'icon-biblioteca', title: 'Biblioteca'}),
-                    new MenuOption({ icon: 'icon-apuntes', title: 'Apuntes'}),
-                    new MenuOption({ icon: 'icon-videoteca', title: 'Videoteca'}),
-                    new MenuOption({ icon: 'icon-documentos', title: 'Documentos Populares'})
+                    new MenuOption({ icon: '', title: 'Blogosfera' }),
+                    new MenuOption({ icon: '', title: 'Libros'}),
+                    new MenuOption({ icon: '', title: 'Biblioteca'}),
+                    new MenuOption({ icon: '', title: 'Apuntes'}),
+                    new MenuOption({ icon: '', title: 'Videoteca'}),
+                    new MenuOption({ icon: '', title: 'Documentos Populares'})
                 ]}),
                 new MenuOption({ icon: 'icon-menu-ofimatica', title: 'Ofimática'}),
                 new MenuOption({ icon: 'icon-menu-ausencias', title: 'Ausencias'}),

@@ -15,6 +15,8 @@
     <input matInput placeholder="Buscar" value="">
 </mat-form-field>
 
+
+
 <div class="header-user">
     <menu-apps></menu-apps>
     <user-profile></user-profile>
@@ -25,4 +27,11 @@
     <a><i class="fas fa-cog fa-2x"></i></a>
     <a class="clickable" matTooltip="Pantalla completa" (click)="layout.toggleFullscreen()"><i class="fa-2x fas fa-expand"></i></a>
     <a><i class="fas fa-power-off fa-2x"></i></a>
+</div>
+
+<div class="responsive-options">
+    <a class="searcher"><i class="fas fa-search fa-2x"></i></a>
+    <menu-apps></menu-apps>
+    <app-notifications></app-notifications>
+
 </div>

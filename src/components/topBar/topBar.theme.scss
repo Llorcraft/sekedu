@@ -17,4 +17,14 @@
             font-style: italic;
         }
     }
+    @media (max-width: 1199.98px) {
+        .mat-form-field {
+            width: 250px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        .mat-form-field {
+            display: none;
+        }
+    }
 }
