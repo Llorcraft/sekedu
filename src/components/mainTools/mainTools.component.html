@@ -1,6 +1,6 @@
 <ul>
     <li *ngFor="let option of options" class="p-0">
-        <icon-button class="cyan" [icon]="'/assets/images/icons/'+option.icon" [title]="option.title" [text]="option.text">
+        <icon-button class="cyan" [icon]="option.icon" [title]="option.title" [text]="option.text">
         </icon-button>
     </li>
 </ul>

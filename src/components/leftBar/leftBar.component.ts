@@ -12,7 +12,6 @@ import { MenuOption } from 'src/models';
 export class LeftBarComponent {
     options: MenuOption[] = [];
     timer: any = null;
-    panelOpenState = false;
     @HostBinding('class.collapsed') @Input() collapsed: boolean = false;
     // @HostListener('mouseout') onMouseOut() {
     //     clearTimeout(this.timer);

@@ -24,14 +24,15 @@ left-bar {
     &.theme-dark {
         $background: #263746;
         $color: #fff;
-        $background-active: #262B30;
+        $background-active: #4b5865;
+        $background-hover: #262B30;
         $background-child: #EAF1FB;
         $color-child: #263746;
         $background-child-active: #CCE4F9;
         background: $background;
         color: $color;
         mat-accordion.dark {
-            > mat-expansion-panel {
+            >mat-expansion-panel {
                 background: $background;
                 box-shadow: none;
                 border-radius: 0 !important;
@@ -42,7 +43,7 @@ left-bar {
                     &.mat-expanded {}
                     &:hover {
                         box-shadow: none;
-                        background: $background-active;
+                        background: $background-hover;
                     }
                     mat-panel-title {
                         background: transparent;
@@ -120,7 +121,7 @@ left-bar {
                         mat-panel-title {}
                     }
                 }
-                &:nth-last-child(3){
+                &:nth-last-child(3) {
                     border-top: 1px solid lighten($background, 10);
                 }
             }
