@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, HostBinding, HostListener, Input } from '@angular/core';
+import { Component, ViewEncapsulation, HostBinding, Input } from '@angular/core';
 import { MenuService } from 'src/services';
 import { MenuOption } from 'src/models';
 

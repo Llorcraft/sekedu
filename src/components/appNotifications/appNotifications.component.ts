@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostBinding } from '@angular/core';
 import { NotificationsService } from 'src/services';
 import { AppNotification } from 'src/models';
 
@@ -11,14 +11,19 @@ import { AppNotification } from 'src/models';
 })
 export class AppNotificationsComponent implements OnInit {
     notifications: AppNotification[] = [];
-        
+    @HostBinding('class.shown') visible = true;
+
     constructor(private service: NotificationsService) { }
 
-    ngOnInit(): void { 
+    ngOnInit(): void {
         this.loadNotifications();
     }
 
     async loadNotifications() {
         this.notifications = await this.service.getNotifications();
+    }
+
+    toggle() {
+        this.visible = !this.visible;
     }
 }

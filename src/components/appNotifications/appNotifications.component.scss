@@ -1,15 +1,58 @@
-.notifications-menu {
-    button {
-        strong {
-            display: block;
-        }
-    }
-}
+@import '../../../src/scss/variables.scss';
+// .notifications-menu {
+//     button {
+//         strong {
+//             display: block;
+//         }
+//     }
+// }
 
-@media (max-width: 991.98px) {
-    app-notifications {
-        a {
-            margin-left: 0;
+// @media (max-width: 991.98px) {
+//     app-notifications {
+//         a {
+//             margin-left: 0;
+//         }
+//     }
+// }
+
+app-notifications {
+    .notifications-container {
+        padding: 2rem 0 2rem;
+        color: #333;
+        position: fixed;
+        height: calc(100vh - #{$topBarHeight});
+        top: $topBarHeight;
+        right: -$notificationBarWidth - 20px;
+        transition: right linear .2s;
+        width: $notificationBarWidth;
+        background: #fff;
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, .5);
+
+        perfect-scrollbar {
+            height: calc(100vh - #{$topBarHeight} - 6rem);
+            padding: 0 2rem;
+        }
+
+        h3 {
+            color: $sek-blue;
+            line-height: 3rem;
+            padding: 0 .5rem 0 2rem;
+            font-weight: 600;
+
+            +svg {
+                cursor: pointer;
+                position: absolute;
+                right: .5rem;
+                top: .5rem
+            }
         }
     }
+
+    &.shown {
+        .notifications-container {
+            right: 0;
+            //display: initial;
+        }
+    }
+
 }
