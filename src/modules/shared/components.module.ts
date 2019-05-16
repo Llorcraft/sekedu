@@ -1,3 +1,4 @@
+import {PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -31,6 +32,7 @@ import { MaterialModule } from './material.module';
     imports: [
         CommonModule,
         MaterialModule,
+        PerfectScrollbarModule
     ],
     exports: [
         MainOptionsComponent,
@@ -41,7 +43,14 @@ import { MaterialModule } from './material.module';
         TopBarComponent,
         MenuAppsComponent,
         AppNotificationsComponent,
-        UserProfileComponent
+        UserProfileComponent,
+        PerfectScrollbarModule
+    ],
+    providers: [
+        {
+            provide: PERFECT_SCROLLBAR_CONFIG,
+            useValue: { suppressScrollX: true }
+        }
     ]
 })
 export class SharedComponentsModule { }

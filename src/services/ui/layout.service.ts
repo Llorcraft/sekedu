@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LayoutService {
-    collapsed = true;
+    collapsed = !1;
 
     toggleFullscreen(elem: any) {
         elem = elem || document.documentElement;

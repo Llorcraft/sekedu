@@ -1,8 +1,16 @@
 @import "../scss/variables.scss";
 
 app-root {
-    display: inline-block;
+    display: block;
+    overflow: hidden;
     width: 100%;
+    height: calc(100vh - #{$topBarHeight});
+
+    perfect-scrollbar {
+        z-index: 10;
+        height: calc(100vh - #{$topBarHeight});
+        max-height: calc(100vh - #{$topBarHeight});
+    }
 
     .layout {
         width: 100%;

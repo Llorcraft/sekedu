@@ -69,7 +69,7 @@ export class MenuService {
                 new MenuOption({ icon: 'icon-biblioteca', title: 'Biblioteca', text: 'Lorem ipsum dolor, sit amet ladre optovul serum' }),
                 new MenuOption({ icon: 'icon-apuntes', title: 'Apuntes', text: 'Lorem ipsum dolor, sit amet ladre optovul serum' }),
                 new MenuOption({ icon: 'icon-videoteca', title: 'Videoteca', text: 'Lorem ipsum dolor, sit amet ladre optovul serum' }),
-                new MenuOption({ icon: 'icon-documentos', title: 'Documentos populares', text: 'Lorem ipsum dolor, sit amet ladre optovul serum' }),
+                new MenuOption({ icon: 'icon-documentos', title: 'Documentos populares', text: 'Lorem ipsum dolor, sit amet ladre optovul serum' })
             ]);
         });
     }

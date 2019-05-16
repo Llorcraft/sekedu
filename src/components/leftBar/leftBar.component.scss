@@ -1,5 +1,6 @@
 @import "../../scss/variables.scss";
 @import "../../scss/media.scss";
+
 left-bar {
     overflow-y: auto;
     overflow: hidden;
@@ -11,16 +12,19 @@ left-bar {
     z-index: 3;
     transition: width linear 0.15s;
     border-top: 1px solid #707070;
+
     //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
     &.collapsed {
         width: $leftBarCollpasedWidth;
         //margin-left: calc(#{-$leftBarWidth} - #{$leftBarCollpasedWidth} + 40px);
     }
+
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
+
     &.theme-dark {
         $background: #263746;
         $color: #fff;
@@ -31,20 +35,36 @@ left-bar {
         $background-child-active: #CCE4F9;
         background: $background;
         color: $color;
+
+        perfect-scrollbar {
+            .ps__rail-y {
+                background: transparent !important
+            }
+            .ps__thumb-y {
+                background: lighten($background, 15)!important
+            }
+        }
+    
+    
+
         mat-accordion.dark {
             >mat-expansion-panel {
                 background: $background;
                 box-shadow: none;
                 border-radius: 0 !important;
+
                 mat-expansion-panel-header {
                     border: none;
                     border-radius: 0;
                     box-shadow: none;
+
                     &.mat-expanded {}
+
                     &:hover {
                         box-shadow: none;
                         background: $background-hover;
                     }
+
                     mat-panel-title {
                         background: transparent;
                         color: $color !important;
@@ -52,75 +72,96 @@ left-bar {
                         pointer-events: initial;
                         font-size: 15px;
                         white-space: nowrap;
+
                         i {
                             margin-right: 30px;
                             font-size: 23px;
                         }
+
                         .icon- {
                             &menu-inicio {
                                 color: #D50590;
                             }
+
                             &menu-colaborativo {
                                 color: #5651AF;
                             }
+
                             &menu-entorno-aprendizaje {
                                 color: #7FB423;
                             }
+
                             &menu-correo {
                                 color: #0073CA;
                             }
+
                             &menu-datos-academicos {
                                 color: #F56B22;
                             }
+
                             &menu-gestor-servicios {
                                 color: #32B4AF;
                             }
+
                             &menu-portfolio-digital {
                                 color: #BF903F;
                             }
+
                             &menu-calendarios {
                                 color: #F10682;
                             }
+
                             &menu-herramientas {
                                 color: #707070;
                             }
+
                             &menu-ofimatica {
                                 color: #E99467;
                             }
+
                             &menu-ausencias {
                                 color: #F50707;
                             }
+
                             &menu-usuario {
                                 color: #707070;
                             }
+
                             &menu-ajustes {
                                 color: #707070;
                             }
+
                             &menu-cerrar-sesion {
                                 color: #707070;
                             }
                         }
                     }
+
                     .mat-expansion-indicator:after {
                         color: $color;
                     }
                 }
+
                 .mat-expansion-panel-body {
                     background: $background-child;
                     color: $color-child;
                     white-space: nowrap;
                 }
+
                 ul {
                     li {
                         padding: 10px 20px;
                     }
                 }
+
                 &.active {
                     mat-expansion-panel-header {
                         background: $background-active;
+
                         mat-panel-title {}
                     }
                 }
+
                 &:nth-last-child(3) {
                     border-top: 1px solid lighten($background, 10);
                 }

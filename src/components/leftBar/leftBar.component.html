@@ -1,13 +1,16 @@
-<mat-accordion class="dark">
-    <mat-expansion-panel *ngFor="let option of options; let i = index" [disabled]="!option.options.length" [class.active]="i==0">
-        <mat-expansion-panel-header [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
-            <mat-panel-title><i class="{{option.icon}}"></i> {{option.title}}</mat-panel-title>
-        </mat-expansion-panel-header>
-        <ul *ngIf="option.options.length">
-            <li *ngFor="let subOption of option.options">
-                {{subOption.title}}
-            </li>
-        </ul>
+<perfect-scrollbar [config]="{suppressScrollX: true}">
+    <mat-accordion class="dark">
+        <mat-expansion-panel *ngFor="let option of options; let i = index" [disabled]="!option.options.length"
+            [class.active]="i==0">
+            <mat-expansion-panel-header [collapsedHeight]="'50px'" [expandedHeight]="'50px'">
+                <mat-panel-title><i class="{{option.icon}}"></i> {{option.title}}</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul *ngIf="option.options.length">
+                <li *ngFor="let subOption of option.options">
+                    {{subOption.title}}
+                </li>
+            </ul>
 
-    </mat-expansion-panel>
-</mat-accordion>
+        </mat-expansion-panel>
+    </mat-accordion>
+</perfect-scrollbar>
