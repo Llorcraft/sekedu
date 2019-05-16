@@ -34,14 +34,10 @@ export class MenuService {
     async getOfficeApps(): Promise<MenuOption[]> {
         return new Promise<MenuOption[]>(resolve => {
             const apps = [
-                new MenuOption({ icon: 'word.png', title: 'Word' }),
-                new MenuOption({ icon: 'excel.png', title: 'Excel' }),
-                new MenuOption({ icon: 'ppt.png', title: 'Power Point' }),
-                new MenuOption({ icon: 'onedrive.png', title: 'One Drive' }),
-                new MenuOption({ icon: 'teams.png', title: 'Teams' }),
-                new MenuOption({ icon: 'skype.png', title: 'Skype' }),
-                new MenuOption({ icon: 'onenote.png', title: 'One Note' }),
-                new MenuOption({ icon: 'outlook.png', title: 'Outlook' }),
+                new MenuOption({ icon: 'word.svg', title: 'Word' }),
+                new MenuOption({ icon: 'excel.svg', title: 'Excel' }),
+                new MenuOption({ icon: 'powerpoint.svg', title: 'Power Point' }),
+                new MenuOption({ icon: 'onedrive.svg', title: 'One Drive' })
             ]
             resolve(apps)
         });
