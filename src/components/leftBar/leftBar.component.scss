@@ -1,6 +1,7 @@
 @import "../../scss/variables.scss";
 @import "../../scss/media.scss";
 left-bar {
+    overflow: auto;
     width: $leftBarWidth;
     position: fixed;
     top: $topBarHeight;
@@ -28,7 +29,7 @@ left-bar {
         background: $background;
         color: $color;
         mat-accordion.dark {
-            mat-expansion-panel {
+            > mat-expansion-panel {
                 background: $background;
                 box-shadow: none;
                 border-radius: 0 !important;
@@ -114,6 +115,9 @@ left-bar {
                         background: $background-active;
                         mat-panel-title {}
                     }
+                }
+                &:nth-last-child(3){
+                    border-top: 1px solid lighten($background, 10);
                 }
             }
         }
