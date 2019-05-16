@@ -23,10 +23,7 @@ export class MenuService {
                     new MenuOption({ icon: 'icon-documentos', title: 'Documentos Populares'})
                 ]}),
                 new MenuOption({ icon: 'icon-menu-ofimatica', title: 'Ofimática'}),
-                new MenuOption({ icon: 'icon-menu-ausencias', title: 'Ausencias'}),
-                new MenuOption({ icon: 'icon-menu-usuario', title: 'Usuario'}),
-                new MenuOption({ icon: 'icon-menu-ajustes', title: 'Ajustes'}),
-                new MenuOption({ icon: 'icon-menu-cerrar-sesion', title: 'Cerrar Sesión'})
+                new MenuOption({ icon: 'icon-menu-ausencias', title: 'Ausencias'})
             ]
             resolve(options)
         });

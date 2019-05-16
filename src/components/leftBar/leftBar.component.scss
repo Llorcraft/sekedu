@@ -162,9 +162,9 @@ left-bar {
                     }
                 }
 
-                &:nth-last-child(3) {
-                    border-top: 1px solid lighten($background, 10);
-                }
+                // &:nth-last-child(3) {
+                //     border-top: 1px solid lighten($background, 10);
+                // }
             }
         }
     }
