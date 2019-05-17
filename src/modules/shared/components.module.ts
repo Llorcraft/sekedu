@@ -10,7 +10,8 @@ import {
     TopBarComponent,
     MenuAppsComponent,
     AppNotificationsComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PageTitleComponent
 } from 'src/components';
 import { MaterialModule } from './material.module';
 
@@ -27,7 +28,8 @@ import { MaterialModule } from './material.module';
         TopBarComponent,
         MenuAppsComponent,
         AppNotificationsComponent,
-        UserProfileComponent
+        UserProfileComponent,
+        PageTitleComponent
     ],
     imports: [
         CommonModule,
@@ -44,7 +46,8 @@ import { MaterialModule } from './material.module';
         MenuAppsComponent,
         AppNotificationsComponent,
         UserProfileComponent,
-        PerfectScrollbarModule
+        PerfectScrollbarModule,
+        PageTitleComponent
     ],
     providers: [
         {

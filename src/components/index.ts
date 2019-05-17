@@ -1,3 +1,4 @@
+export { PageTitleComponent } from "./pageTitle/pageTitle.component";
 export { UserProfileComponent } from "./userProfile/userProfile.component";
 export { AppNotificationsComponent } from "./appNotifications/appNotifications.component";
 export { MenuAppsComponent } from "./menuApps/menuApps.component";
