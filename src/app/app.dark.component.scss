@@ -1,0 +1,6 @@
+@import "../scss/variables.scss";
+app-root {
+    &.dark {
+        background: red;
+    }
+}

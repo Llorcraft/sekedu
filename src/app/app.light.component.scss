@@ -1,0 +1,6 @@
+@import "../scss/variables.scss";
+app-root {
+    &.light {
+        background: yellow;
+    }
+}

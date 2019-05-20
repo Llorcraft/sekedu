@@ -1,0 +1,94 @@
+@import "../../scss/variables.scss";
+@import "../../scss/media.scss";
+.dark {
+    left-bar {
+        border-top: 1px solid #707070;
+        //box-shadow: 2px 0px 0.5rem rgba(0, 0, 0, 0.5);
+        $background: #263746;
+        $color: #fff;
+        $background-active: #4b5865;
+        $background-hover: #262b30;
+        $background-child: #eaf1fb;
+        $color-child: #263746;
+        $background-child-active: #cce4f9;
+        background: $background;
+        color: $color;
+        perfect-scrollbar {
+            .ps__rail-y {
+                background: transparent !important;
+            }
+            .ps__thumb-y {
+                background: lighten($background, 15) !important;
+            }
+        }
+        mat-accordion {
+            >mat-expansion-panel {
+                background: $background;
+                &:hover {
+                    background: $background-hover;
+                }
+                mat-panel-title {
+                    background: transparent;
+                    color: $color !important;
+                    pointer-events: initial;
+                    .icon- {
+                        &menu-inicio {
+                            color: #d50590;
+                        }
+                        &menu-colaborativo {
+                            color: #5651af;
+                        }
+                        &menu-entorno-aprendizaje {
+                            color: #7fb423;
+                        }
+                        &menu-correo {
+                            color: #0073ca;
+                        }
+                        &menu-datos-academicos {
+                            color: #f56b22;
+                        }
+                        &menu-gestor-servicios {
+                            color: #32b4af;
+                        }
+                        &menu-portfolio-digital {
+                            color: #bf903f;
+                        }
+                        &menu-calendarios {
+                            color: #f10682;
+                        }
+                        &menu-herramientas {
+                            color: #707070;
+                        }
+                        &menu-ofimatica {
+                            color: #e99467;
+                        }
+                        &menu-ausencias {
+                            color: #f50707;
+                        }
+                        &menu-usuario {
+                            color: #707070;
+                        }
+                        &menu-ajustes {
+                            color: #707070;
+                        }
+                        &menu-cerrar-sesion {
+                            color: #707070;
+                        }
+                    }
+                }
+                .mat-expansion-indicator:after {
+                    color: $color;
+                }
+            }
+            .mat-expansion-panel-body {
+                background: $background-child;
+                color: $color-child;
+            }
+            &.active {
+                mat-expansion-panel-header {
+                    background: $background-active;
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ import { MenuOption } from 'src/models';
 @Component({
     selector: 'left-bar',
     templateUrl: './leftBar.component.html',
-    styleUrls: ['./leftBar.component.scss'],
+    styleUrls: ['./leftBar.component.scss', './leftBar.dark.component.scss'],
     encapsulation: ViewEncapsulation.None,
     providers: [MenuService]
 })

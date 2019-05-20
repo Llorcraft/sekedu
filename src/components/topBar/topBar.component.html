@@ -24,7 +24,7 @@
 
 <div class="header-settings">
     <app-notifications></app-notifications>
-    <a><i class="fas fa-cog fa-2x"></i></a>
+    <a (click)="layout.toggleTheme()"><i class="fas fa-cog fa-2x"></i></a>
     <a class="clickable" matTooltip="Pantalla completa" (click)="layout.toggleFullscreen()"><i class="fa-2x fas fa-expand"></i></a>
     <a><i class="fas fa-power-off fa-2x"></i></a>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../../services/ui/layout.service';
 
 @Component({
     selector: 'dashboard-page',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./dashboard.page.scss']
 })
 export class DashboardPage implements OnInit {
-    constructor() { }
+    constructor(public layout: LayoutService) { }
 
     ngOnInit(): void { }
 
