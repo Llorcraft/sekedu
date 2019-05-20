@@ -1,8 +1,8 @@
 icon-button {
     display: grid;
     grid-template-columns: 80px auto;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     cursor: pointer;
     border-radius: 0.25rem;
     text-align: left;
@@ -20,7 +20,7 @@ icon-button {
         padding-bottom: .5rem;
     }
     strong {
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem 0.75rem 0.75rem 0.75rem;
         overflow: hidden;
         small {
             display: block;
@@ -37,7 +37,7 @@ icon-button {
         span {
             border-right: 1px solid darken($color, 10);
             i {
-                color: lighten($color, 10);
+                color: lighten($color, 90);
             }
         }
         strong {
@@ -50,7 +50,8 @@ icon-button {
         span {
             border-right: 1px solid darken($color, 10);
             i {
-                color: darken($color, 10);
+                //color: darken($color, 20);
+                color: rgba(38, 55, 70, .5);
             }
         }
         strong {
